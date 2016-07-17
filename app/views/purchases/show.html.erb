@@ -1,3 +1,27 @@
-<p>This is the purchase page</p>
+<section id="content-receipt" class="clearfix">
+  <div id="receipt-container">
+    <div class="dotmatrix left"></div>
+    <div id="receipt-content">
+      <h4 id="receipt-title">Thank You!</h4>
+      <p><strong>RECEIPT</strong></p>
+      <div id="receipt-details" class="row clearfix">
+        <div class="col-sm-8 receipt-left">
+          <p><strong class="font-weight-heavy">Growth Hacking</strong><br/> <span class="font-weight-light">Crash Course</span></p>
+        </div>
+        <div class="col-sm-4">
+          $4.99
+        </div>
+      </div>
 
-<p> Your purchase <%= @purchase.inspect %></p>
+      <a href="https://s3-us-west-2.amazonaws.com/stripetestapp/Remote+Team+Building.pdf?X-Amz-Date=20160717T224742Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=41f0ba360c44e25ba432a7976aaab5c0d5a9db570467fc88042004269fd85137&X-Amz-Credential=ASIAIAUTAULRZUTRPAQQ/20160717/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEMj//////////wEaDE9CxaLZM/%2BK5MXWPyLHATs5Hvjs5DwT8r959KdTGdUNtENOWbbLln5XZ1i63sXKTzvqsCN5D54lIXZE660n8Uif0UxQ42idFuU97uS1OM5RNfxCXGWjx/dJnq0pXcJVfDEqPwK41CqRCNxd7T/zA%2ByyLZmBZAlAkSm4yGiKsn6z1Ci49j2DumtYS%2BNEU1%2BY2T6L5z9lx1GVKtRszV%2Bw/6orOT/WFrPKZRMQCJHtKaO0WX5/BOfvANrVQDeOss61duX0m3BYoqEB5vwoskow4JEKpg12pZIo/Y6wvAU%3D"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
+      <footer id="receipt-footer">
+        <small>Your purchase is complete. We hope you enjoy it!</small>
+      </footer>
+    </div>
+    <div class="dotmatrix right"></div>
+  </div>
+  <div id="receipt-shadow"></div>
+</section>
+<footer id="site-footer">
+Made by <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'One Month') %></a>
+</footer>
