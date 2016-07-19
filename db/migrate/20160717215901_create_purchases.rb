@@ -8,7 +8,7 @@ class CreatePurchases < ActiveRecord::Migration
      	t.string :customer_id
      	t.string :card
      	t.integer :product_id
-      	t.timestamps null: false
+      t.timestamps null: false
     end
   end
 end
